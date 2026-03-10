@@ -21,7 +21,7 @@
          --bg: #080810;
          --surface: #0f0f1a;
          --surface2: #15151f;
-         --border: #1f1f30;
+         --border: #606875;
          --text: #ede9e0;
          --muted: #5c5870;
          --pensamiento: #d4a84b;
@@ -126,6 +126,7 @@
 
       .filter-inner {
          display: flex;
+         justify-content: center;
          gap: 0.5rem;
          align-items: center;
          min-width: max-content;
@@ -524,11 +525,13 @@
    <div class="filter-bar">
       <div class="filter-inner">
          <button class="btn-filter active" data-axis="pensamiento" onclick="toggleFilter('pensamiento')"><span
-               class="dot"></span>Pensamiento</button>
-         <button class="btn-filter active" data-axis="poder" onclick="toggleFilter('poder')"><span
+            class="dot"></span>Pensamiento</button>
+            <button class="btn-filter active" data-axis="poder" onclick="toggleFilter('poder')"><span
                class="dot"></span>Poder</button>
-         <button class="btn-filter active" data-axis="tecnica" onclick="toggleFilter('tecnica')"><span
-               class="dot"></span>Técnica</button>
+               <button class="btn-filter active" data-axis="tecnica" onclick="toggleFilter('tecnica')"><span
+                  class="dot"></span>Técnica</button>
+               </div>
+               <div class="filter-inner" style="padding-top:5px">
          <button class="btn-filter active" data-axis="violencia" onclick="toggleFilter('violencia')"><span
                class="dot"></span>Violencia</button>
          <button class="btn-filter active" data-axis="emancipacion" onclick="toggleFilter('emancipacion')"><span
