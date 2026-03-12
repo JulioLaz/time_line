@@ -23,7 +23,7 @@
          --surface2: #15151f;
          --border: #606875;
          --text: #ede9e0;
-         --muted: #5c5870;
+         --muted: #9993b3;
          --pensamiento: #d4a84b;
          --poder: #d45555;
          --tecnica: #5599d4;
@@ -448,7 +448,7 @@
 
       /* ── FOOTER ── */
       .site-footer {
-         padding: 2rem 1.2rem;
+         padding: 1rem 1.2rem;
          border-top: 1px solid var(--border);
          display: flex;
          flex-direction: column;
@@ -509,6 +509,41 @@
          padding-top: 0.5rem;
          border-top: 1px solid var(--border);
       }
+
+      .task-note {
+         /* font-family: 'Lora', Georgia, serif; */
+         font-family: 'DM Mono', monospace;
+         font-size: 0.7rem;
+         color: var(--text);
+         background: var(--surface2);
+         border: 1px solid var(--border);
+         border-radius: 4px;
+         padding: 1rem;
+         margin: 1rem auto;
+         max-width: 700px;
+         line-height: 1.6;
+      }
+
+      .task-title {
+         font-family: 'Playfair Display', serif;
+         font-size: 1rem;
+         font-weight: 600;
+         color: var(--pensamiento);
+         margin-bottom: 0.8rem;
+         text-align: center;
+         letter-spacing: -0.01em;
+      }
+   .legend-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--muted);
+      text-align: center;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+   }
+
+
    </style>
 </head>
 
@@ -542,18 +577,31 @@
    <div id="timeline"></div>
 
    <footer class="site-footer">
-      <div class="legend-grid">
-         <div class="leg-item" data-axis="pensamiento"><span class="leg-name">Pensamiento</span><span
-               class="leg-desc">Filosofía, ciencia y revoluciones del conocimiento</span></div>
-         <div class="leg-item" data-axis="poder"><span class="leg-name">Poder</span><span class="leg-desc">Imperios,
-               Estados y formas de gobierno</span></div>
-         <div class="leg-item" data-axis="tecnica"><span class="leg-name">Técnica</span><span class="leg-desc">Inventos
-               que transformaron la vida humana</span></div>
-         <div class="leg-item" data-axis="violencia"><span class="leg-name">Violencia</span><span
-               class="leg-desc">Guerras y catástrofes que redefinieron el mundo</span></div>
-         <div class="leg-item" data-axis="emancipacion"><span class="leg-name">Emancipación</span><span
-               class="leg-desc">Luchas por libertad y dignidad humana</span></div>
+      <div>
+         <h2 class="legend-title">Categorías de la línea de tiempo</h2>
+         <div class="legend-grid">
+            <div class="leg-item" data-axis="pensamiento"><span class="leg-name">Pensamiento</span><span
+                  class="leg-desc">Filosofía, ciencia y revoluciones del conocimiento</span></div>
+            <div class="leg-item" data-axis="poder"><span class="leg-name">Poder</span><span class="leg-desc">Imperios,
+                  Estados y formas de gobierno</span></div>
+            <div class="leg-item" data-axis="tecnica"><span class="leg-name">Técnica</span><span class="leg-desc">Inventos
+                  que transformaron la vida humana</span></div>
+            <div class="leg-item" data-axis="violencia"><span class="leg-name">Violencia</span><span
+                  class="leg-desc">Guerras y catástrofes que redefinieron el mundo</span></div>
+            <div class="leg-item" data-axis="emancipacion"><span class="leg-name">Emancipación</span><span
+                  class="leg-desc">Luchas por libertad y dignidad humana</span></div>
+         </div>
       </div>
+
+      <div class="task-note">
+         <h2 class="task-title">Tarea a realizar</h2>
+         <p>
+            1. Haz una <strong>línea de tiempo</strong> marcando todos los acontecimientos o hitos mencionados.<br><br>
+            2. Elabora una <strong>lista</strong> con cada hito acompañado de un breve resumen.<br><br>
+            3. Selecciona uno o más hitos que consideres importantes para incluir en la línea de tiempo y escribe una <strong>descripción breve</strong>.
+         </p>
+      </div>
+
       <div class="footer-note">
          Prof. Julio Alberto Lazarte · Filosofía 6.º Año · Tucumán, Argentina<br>
          © 2026 Todos los derechos reservados · Uso educativo exclusivo
